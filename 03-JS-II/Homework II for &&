@@ -1,0 +1,9 @@
+For: Es un bucle que nose permite hacer tareas repetitivas simplemente, hasta que nos devuelve lo que estamos buscando o se detiene despues de cierto tiempo.
+For tiene 3 partes, una (var i = o;), nos cuenta las repeticiones que va haciendo , nos ayuda este bucle a repetir un bloque de codigo muchas veces.
+la 2 es la condicion de frenado, cuando queremos que deje de ejecutarse
+(var i = o, <= 100; i++)
+y despues tenemos el paso, es donde queremos que vaya incrementando este valor '(var i =o,)'.
+
+
+
+&&, ||, !: Son operadores lógicos que nos permite preguntar si dos expresiones de igualdad son verdaderas. si ambas o si ninguna es verdadera.
