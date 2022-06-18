@@ -1,0 +1,12 @@
+
+
+Objetos: Nos permite contener mucha información sobre una sola cosa.Se escribe basicamente en forma literar se abren llaves y se escriben separados por comas el nombre de la propiedad y dos puntos el nombre de la propiedad coma  y asi la cantidad de propieades que querramos.
+
+Propiedades: Es una asociación entre un nombre (o clave) y un valor, la misma puede ser un número, un string, un array, una función.
+
+Métodos: Las funciones guardadas en un objeto se denominan métodos y aca se usa como método usando notación de puntos y paréntesis finales.
+
+Bucle for…in: Comienza con parentesis declarando una variable, la palabra clave IN y el nombre del objeto. Recorrerá cada clave del objeto y finaliza cuando hayan pasado todas las claves.
+
+Notación de puntos vs notación de corchetes: Notación de puntos (Dot Notation) es más facil de escribir pero no nos deja intercalar y/o recorrer un objeto, caso contario la notación de corchetes (Bracket Notation) nos permite hacer más cosas y recorrer más objetos. 
+
