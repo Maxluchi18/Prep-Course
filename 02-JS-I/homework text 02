@@ -1,0 +1,11 @@
+Variables: Es un contenedor para almacenar el valor de algo para usar más tarde, la palabra clave que se usa es el VAR, seguida de un espacio más el nombre d ela variable.
+
+Strings: Son variables donde se almacena texto, es decir cualquier conbinación o cantidad de caracteres, se definen siempre entre comillas.
+
+Funciones (argumentos, return): una función es un bloque de códigos diseñado para que realice una tarea en particular, una función comienza con la palabra clave FUNCTION.
+Una vez que podemos ejecutar una función, le pasamoso un argumento, dentro del parentisis, se puede agregar varios argumentos colocando una coma entre ellos.
+Return, se usa para terminar o cortar la ejecución de una función y se especifica el valor que debe retornar dicha función.
+
+Declaraciones if: nos permite ejecutar las funciones inmediatamente, ya que las mismas se ejecutan al momento en que se declaran. Se usan siempre para comparar si son true o false.
+
+Valores booleanos (true, false):Una variable booleana es una variable que sólo puede tomar dos posibles valores: True (verdadero) o False (falso). En general los elementos nulos o vacíos se consideran False y el resto se consideran True.
