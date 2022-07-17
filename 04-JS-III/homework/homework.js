@@ -26,13 +26,12 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
+  var nuevoArray = []
   for(var i = 0; i < array.length; i++){
-    console.log ('1', array)
-    array[i] = array[i] + 1
-    console.log ('2', array)
+    nuevoArray.push(array[i]+1);
   }
-  console.log('3', array)
-  return array  
+  
+  return nuevoArray  
 }
 
 
@@ -61,22 +60,10 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
-  var frase = '';
-
-  for (var i = 0; i < palabras.length; i ++){
-    console.log ('1', frase)
-    if (palabras[i] === palabras[palabras.length-1]){
-      frase = frase + palabras [i]
-    } else {
-    frase = frase + palabras [i] + ' '
-    console.log ('2', frase)
-    }
-  }
-  console.log ('3', frase)
-  return frase
+  var frase = palabras.join(' ');
+  return frase;
 }
-
-
+  
 function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
@@ -134,7 +121,7 @@ function multiplicarArgumentos() {
   // Escribe tu código aquí:
   var producto = 1
   if (arguments.length === 0) return 0
-  if (arguments.length === 1) return arguments [0]
+  
   for(let i = 0; i < arguments.length; i ++){
     producto = producto * arguments[i]
   }
@@ -157,7 +144,7 @@ function cuentoElementos(arreglo){
 
 function diaDeLaSemana(numeroDeDia) {
   //Suponga que los días de la semana se codifican como 1 = Domingo, 2 = Lunes y así sucesivamente. 
-  //Realiza una función que dado el número del día de la semana, retorne: Es fin de semana
+  //Realiza una función que dado el número del día de la semana, retorne: "Es fin de semana"
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
   //Escribe tu código aquí   
   if (numeroDeDia === 1 || numeroDeDia === 7) return 'Es fin de semana'
@@ -170,9 +157,7 @@ function empiezaConNueve(n) {
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
   // 123 lo transformo a string ej. "123"[2]pido y me da el 3
-  var a = String(n)[0]
-  if (Number(a) === 9)return true
-  return false
+ return n.toString()[0]==="9"
 }
 
 
@@ -181,10 +166,11 @@ function todosIguales(arreglo) {
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí 
   //[1,2,3,4,5] 
-  for(let i = 0; i < arreglo.length; i ++){
-   if(arreglo[i] === arreglo[i+ 1]) return true
+  var primerValor = arreglo[0]
+  for(var i = 0; i < arreglo.length; i ++){
+   if(arreglo[i] !== primerValor) return false
   }
-  return false
+  return true
 } 
 
 
@@ -194,7 +180,7 @@ function mesesDelAño(array) {
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
   var array2 = []
-  for(let i = 0; i < array.length; i ++){
+  for(var i = 0; i < array.length; i ++){
     if(array[i] === 'Enero' || array[i] === 'Marzo' || array[i] === 'Noviembre'){
       array2.push(array[i])
     }
@@ -212,7 +198,7 @@ function mayorACien(array) {
   //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
   // Tu código:
   var array2 = []
-  for(let i = 0; i < array.length; i ++){
+  for(var i = 0; i < array.length; i ++){
   if(array[i] >100) {
     array2.push(array[i])
   }
@@ -231,17 +217,17 @@ function breakStatement(numero) {
   // Tu código:
   var array = []
   for(var i = 0; i < 10; i ++){
-   numero = numero + 2
-   if (numero === i) break;
-   else{
+
+    if (i === numero) break;
+
+    numero = numero + 2   
+   
     array.push(numero)
    }
-  }
-  if(i < 10){
-    return 'Se interrumpió la ejecución'
-  }else{
+  
+    if(i === numero) return 'Se interrumpió la ejecución'
     return array
-  }
+  
 }
 
 
@@ -254,12 +240,10 @@ function continueStatement(numero) {
   // Tu código:
    var array = []
    for (var i = 0; i < 10; i ++){
-    if(i === 5){
-      continue
-    }else{
-      numero = numero + 2;
+    if(i === 5) continue;
+      numero = numero + 2
       array.push(numero)
-    }
+    
    } 
       return array
   }   
