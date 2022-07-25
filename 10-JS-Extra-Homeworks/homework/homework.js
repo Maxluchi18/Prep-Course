@@ -11,11 +11,11 @@ function deObjetoAmatriz(objeto){
     }) ➞ [["D", 1], ["B", 2], ["C", 3]]*/
   //Escribe tu código aquí
  // return Object.entries(objeto)
- let newArray = [];
- for(let i in objeto){
- newArray.push([i, objeto[i]]);
+ let nuevoArray = [];
+ for(let clave in objeto){
+ nuevoArray.push([clave, objeto[clave]]);
  }
- return newArray;
+ return nuevoArray;
 }
 
 
@@ -24,8 +24,8 @@ function numberOfCharacters(string) {
   //en formato par clave-valor.
   //Ej: Recibe ---> "adsjfdsfsfjsdjfhacabcsbajda" || Devuelve ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 } 
   //Escribe tu código aquí
-  let obj = {};
-  for (let i = 0; i<string.length; i++){
+  var obj = {};
+  for (var i = 0; i<string.length; i++){
     if(!obj[string[i]]){
       obj[string[i]] =0;
     }
@@ -60,7 +60,7 @@ function asAmirror(str) {
   //Ej: Recibe ---> "The Henry Challenge is close!" || Devuelve ---> "ehT yrneH egnellahC si !esolc"
   //Escribe tu código aquí
   var mirror = ""
-  for (let i = str.length -1; i >= 0; i--){
+  for (var i = str.length -1; i >= 0; i--){
     mirror += str[i]
   } 
   return mirror.split(" ").reverse().join(" ")

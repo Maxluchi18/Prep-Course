@@ -4,8 +4,9 @@ function mayuscula(nombre) {
   //La función recibe un nombre y debe devolver el mismo que recibe pero con su primer letra en mayúscula
   //ej: Recibe "mario" ----> Devuelve "Mario"
   //Tu código:
-  var mayus = nombre.charAt(0).toUpperCase() + nombre.slice(1);
-  return mayus;
+  var letraMayuscula = nombre[0].toUpperCase() 
+  var letraMinuscula = nombre.slice(1)
+  return letraMayuscula + letraMinuscula
 }
 
 function invocarCallback(cb) {
@@ -37,8 +38,8 @@ function forEach(array, cb) {
   // Itera sobre la matriz "array" y pasa los valores al callback uno por uno
   // Pista: Estarás invocando a `cb` varias veces (una por cada valor en la matriz)
   //Tu código:
-  array.forEach(function(e) {
-     cb(e)
+  array.forEach(function(elemento) {
+     cb(elemento)
   }) 
     
 }
